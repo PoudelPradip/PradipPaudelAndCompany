@@ -19,7 +19,7 @@ public class SortingDecendingOrder {
         employees.add(new Employee("Krishna", 12000));
 
         // Sort the list of Employee objects by salary in descending order
-        Collections.sort(employees, Collections.reverseOrder());
+        Collections.sort(employees);
 
         // Iterate through the sorted list and print the names of the employees in descending order of salary
         for (Employee employee : employees) {

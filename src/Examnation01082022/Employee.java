@@ -19,12 +19,12 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee other) {
-        if (this.salary > other.salary) {
-            return -1;
-        } else if (this.salary < other.salary) {
-            return 1;
-        } else {
+        if (this.salary == other.salary) {
             return 0;
+        } else if (this.salary > other.salary) {
+            return -1;
+        } else {
+            return 1;
         }
     }
 }
